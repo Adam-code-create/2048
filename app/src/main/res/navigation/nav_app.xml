@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_app"
+    app:startDestination="@id/splashScreen">
+
+    <fragment
+        android:id="@+id/mainScreen2"
+        android:name="uz.gita.a2048.screens.MainScreen"
+        android:label="MainScreen"
+        tools:layout="@layout/screen_main"/>
+    <fragment
+        android:id="@+id/targetScreen"
+        android:name="uz.gita.a2048.screens.TargetScreen"
+        android:label="TargetScreen"
+        tools:layout="@layout/screen_target">
+        <action
+            android:id="@+id/action_targetScreen_to_mainScreen2"
+            app:destination="@id/mainScreen2" />
+        <action
+            android:id="@+id/action_targetScreen_to_infoScreen"
+            app:destination="@id/infoScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="uz.gita.a2048.screens.SplashScreen"
+        android:label="SplashScreen"
+        tools:layout="@layout/screen_splash"
+    >
+        <action
+            android:id="@+id/action_splashScreen_to_targetScreen"
+            app:destination="@id/targetScreen"
+            app:launchSingleTop = "true"
+            app:popUpToInclusive="true"
+            app:popUpTo="@+id/nav_app"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/infoScreen"
+        android:name="uz.gita.a2048.screens.InfoScreen"
+        android:label="InfoScreen"
+        tools:layout="@layout/screen_info"/>
+</navigation>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/main_bg"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        android:id="@+id/badge"
+        android:text="2048"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="100sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+<!--    <ImageView-->
+<!--        android:layout_width="150dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintDimensionRatio="1:1"-->
+<!--        android:src="@drawable/ic_badge"-->
+<!--        android:id="@+id/badge_target"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        />-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="2048"-->
+<!--        android:id="@+id/target"-->
+<!--        android:textSize="34sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="@color/white"-->
+<!--        app:layout_constraintTop_toTopOf="@id/badge_target"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/badge_target"-->
+<!--        app:layout_constraintLeft_toLeftOf="@id/badge_target"-->
+<!--        app:layout_constraintRight_toRightOf="@id/badge_target"-->
+<!--        />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
